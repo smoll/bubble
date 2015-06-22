@@ -1,0 +1,12 @@
+<!-- /weather/ -->
+<p>Current temperature for Bath, UK: <span id='temp'></span></p>
+<script>
+  $(function () {
+    $.ajax({
+      url: 'http://api.openweathermap.org/data/2.5/weather?id=2656173',
+      dataType: 'jsonp',
+      success: function (data) { $('#temp').text(data.temp + '°C') },
+      error: function () { $('#temp').text('unavailable') }
+    });
+  });
+</script>
