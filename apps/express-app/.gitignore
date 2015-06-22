@@ -1,3 +1,4 @@
 node_modules
 *.log
 Gemfile.lock
+/tests/e2e/req_cache

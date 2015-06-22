@@ -6,3 +6,8 @@ Feature: Weather
 Scenario: Current temp on the landing page
   Given I visit "/"
   Then I should see the current temp
+
+@billy
+Scenario: Current temp on the landing page
+  Given I visit "/"
+  Then I should see the current temp
