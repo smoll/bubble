@@ -10,7 +10,9 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "test": "sh bootstrap_tests.sh"
+    "test": "sh bootstrap_tests.sh",
+    "record": "MODE=record sh bootstrap_tests.sh",
+    "playback": "MODE=playback sh bootstrap_tests.sh"
   },
   "author": "",
   "repository": {

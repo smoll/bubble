@@ -19,6 +19,12 @@ printf "\n"
 # Do tests
 echo Running tests on port $PORT...
 cd tests/e2e
+if [ "$MODE" == record ]; then
+    echo MATCH FOUND!
+    rm -r req_cache
+fi
+mkdir -p req_cache
+
 bundle install
 bundle exec cucumber
 
