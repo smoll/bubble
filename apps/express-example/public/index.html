@@ -1,11 +1,12 @@
 <!-- /weather/ -->
-<p>Current temperature for Bath, UK: <span id='temp'></span></p>
+<p>Current temperature for Bath, UK: <span id='temp'>please wait...</span></p>
+<script src="/jquery.js"></script>
 <script>
   $(function () {
     $.ajax({
       url: 'http://api.openweathermap.org/data/2.5/weather?id=2656173',
       dataType: 'jsonp',
-      success: function (data) { $('#temp').text(data.temp + '°C') },
+      success: function (data) { $('#temp').text(data.main.temp + '°K') },
       error: function () { $('#temp').text('unavailable') }
     });
   });

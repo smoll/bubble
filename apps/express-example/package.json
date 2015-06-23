@@ -1,0 +1,22 @@
+{
+  "name": "express-example",
+  "version": "0.0.0",
+  "description": "Simple express app",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.0",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "sh bootstrap_tests.sh",
+    "billy": "BILLY=true sh bootstrap_tests.sh"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smoll/bubble"
+  },
+  "license": "MIT"
+}
